@@ -1,23 +1,32 @@
 @import 'src/styles/_variables.scss';
 @import 'src/styles/_pluggins.scss';
 
-.bg-principal{
-    background-color:$main-bg;
-    width: 100%;
-    height: 100vh;
+@include reset;
+
+.bg-card{
+    @extend %card-pattern;
+
 }
 
-%button{
+.question{
+    @extend %question-pattern;
+}
+
+.button{
     @extend %button-pattern;
 
     &-checked{
-        background-color: green;
-        color: #fff;
+        @extend .button;
+        background-color: $checked-color;
+        color: #ffffff;
+        border: none
     }
 
     &-wrong{
-        background-color: red;
-        color: #fff;
+        @extend .button;
+        background-color: $wrong-color;
+        color: #ffffff;
+        border: none
     }
 }
 

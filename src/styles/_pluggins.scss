@@ -1,7 +1,41 @@
+@import 'src/styles/_variables.scss';
+
+@mixin reset{
+    *{
+        margin:0;
+        padding: 0;
+        border:0;
+    }
+}
+
 %button-pattern{
-        width: 400px;
-        border-radius: 12px;
-        height: 100px;
-        background-color: rgb(59, 54, 54);
-        color:#fff;
+    width: 400px;
+    border-radius: 12px;
+    height: 56px;
+    background-color:transparent;
+    color:#6066D0;
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom:25px ;
+    border: solid 2px #6066D0;
+    cursor: pointer;
+}
+
+%card-pattern{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-card;
+    width: 464px;
+    padding: 32px;
+    border-radius: 24px;
+}
+
+%question-pattern{
+    font-weight: 700;
+    color: $question-color;
+    max-width: 373px;
+    font-size: 24px;
+    margin-bottom: 32px;
 }
