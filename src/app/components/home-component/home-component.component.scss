@@ -1,0 +1,24 @@
+@import 'src/styles/_variables.scss';
+@import 'src/styles/_pluggins.scss';
+
+.bg-principal{
+    background-color:$main-bg;
+    width: 100%;
+    height: 100vh;
+}
+
+%button{
+    @extend %button-pattern;
+
+    &-checked{
+        background-color: green;
+        color: #fff;
+    }
+
+    &-wrong{
+        background-color: red;
+        color: #fff;
+    }
+}
+
+   
